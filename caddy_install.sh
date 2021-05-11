@@ -43,7 +43,7 @@ Download_caddy(){
 	PID=$(ps -ef |grep "caddy" |grep -v "grep" |grep -v "init.d" |grep -v "service" |grep -v "caddy_install" |awk '{print $2}')
 	[[ ! -z ${PID} ]] && kill -9 ${PID}
 	[[ -e "caddy_linux*.tar.gz" ]] && rm -rf "caddy_linux*.tar.gz"
-	wget --no-check-certificate -O "caddy_linux.tar.gz" "https://ghproxy.com/https://github.com/manfly17/ServerStatus-Toyo/raw/master/caddy_linux.tar.gz"
+	wget --no-check-certificate -O "caddy_linux.tar.gz" "https://ghproxy.com/https://github.com/manfly17/ServerStatus-Toyo/releases/download/1.0/caddy_linux.tar.gz"
 	tar zxf "caddy_linux.tar.gz"
 	rm -rf "caddy_linux.tar.gz"
 	[[ ! -e ${caddy_file} ]] && echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy 解压失败或压缩文件错误 !" && exit 1
