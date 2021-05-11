@@ -109,8 +109,6 @@ ServerStatus 一键安装管理脚本 [vx.x.x]
 
 Caddy配置文件：/usr/local/caddy/caddy
 
-默认脚本只能一开始安装的时候设置配置文件，更多的Caddy使用方法，可以参考这些教程：https://doub.io/search/caddy
-
 ——————————————————————————————————————
 
 安装目录：/usr/local/ServerStatus
