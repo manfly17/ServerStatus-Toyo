@@ -899,7 +899,7 @@ Set_iptables(){
 }
 menu_client(){
 echo && echo -e "  ServerStatus 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  
+————————————
  ${Green_font_prefix} 1.${Font_color_suffix} 安装 客户端
  ${Green_font_prefix} 2.${Font_color_suffix} 卸载 客户端
 ————————————
@@ -932,7 +932,7 @@ else
 	fi
 fi
 echo
-read -e -p " 请输入数字 [0-10]:" num
+read -e -p " 请输入数字 [0-9]:" num
 case "$num" in
 	1)
 	Install_ServerStatus_client
@@ -968,7 +968,7 @@ esac
 }
 menu_server(){
 echo && echo -e "  ServerStatus 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  
+————————————
  ${Green_font_prefix} 1.${Font_color_suffix} 安装 服务端
  ${Green_font_prefix} 2.${Font_color_suffix} 卸载 服务端
 ————————————
@@ -992,7 +992,7 @@ else
 	echo -e " 当前状态: 服务端 ${Red_font_prefix}未安装${Font_color_suffix}"
 fi
 echo
-read -e -p " 请输入数字 [0-10]:" num
+read -e -p " 请输入数字 [0-9]:" num
 case "$num" in
 	1)
 	Install_ServerStatus_server
@@ -1022,7 +1022,7 @@ case "$num" in
 	menu_client
 	;;
 	*)
-	echo "请输入正确数字 [0-10]"
+	echo "请输入正确数字 [0-9]"
 	;;
 esac
 }
