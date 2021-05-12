@@ -626,9 +626,9 @@ Modify_config_client(){
 Install_jq(){
 	if [[ ! -e ${jq_file} ]]; then
 		if [[ ${bit} = "x86_64" ]]; then
-			wget --no-check-certificate "https://mirror.ghproxy.com/https://github.com/manfly17/jq/releases/download/jq-1.6/jq-linux64" -O ${jq_file}
+			wget --no-check-certificate "https://mirror.ghproxy.com/https://github.com/manfly17/jq/releases/download/jq-1.5/jq-linux64" -O ${jq_file}
 		else
-			wget --no-check-certificate "https://mirror.ghproxy.com/https://github.com/manfly17/jq/releases/download/jq-1.6/jq-linux32" -O ${jq_file}
+			wget --no-check-certificate "https://mirror.ghproxy.com/https://github.com/manfly17/jq/releases/download/jq-1.5/jq-linux32" -O ${jq_file}
 		fi
 		[[ ! -e ${jq_file} ]] && echo -e "${Error} JQ解析器 下载失败，请检查 !" && exit 1
 		chmod +x ${jq_file}
